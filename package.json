@@ -7,5 +7,8 @@
   },
   "author": "HARLEEN SINGH",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
 }
