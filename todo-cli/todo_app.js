@@ -9,19 +9,19 @@ const todoList = () => {
   
     const overdue = () => {
       return all.filter(
-        (todo) => todo.dueDate < new Date().toLocaleDateString("en-CA")
-      );
+        (todo) => todo.dueDate < new Date().toISOString().slice(0, 10) 
+    );
     };
   
     const dueToday = () => {
       return all.filter(
-        (todo) => todo.dueDate === new Date().toLocaleDateString("en-CA")
+        (todo) => todo.dueDate === new Date().toISOString().slice(0, 10)
       );
     };
   
     const dueLater = () => {
       return all.filter(
-        (todo) => todo.dueDate > new Date().toLocaleDateString("en-CA")
+        (todo) => todo.dueDate > new Date().toISOString().slice(0, 10)
       );
     };
     return {
