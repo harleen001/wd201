@@ -3,12 +3,26 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start":"nodemon -e js,ejs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "HARLEEN SINGH",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "minimist": "^1.2.8"
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "minimist": "^1.2.8",
+    "mysql2": "^3.11.3",
+    "nodemon": "^3.1.7",
+    "pg": "^8.13.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.4"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^5.0.0",
+    "express": "^4.21.0",
+    "sequelize-cli": "^6.6.2"
   }
 }
